@@ -1,0 +1,322 @@
+@import url(http://fonts.googleapis.com/css?family=Abel|Satisfy);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300);
+@import url(http://fonts.googleapis.com/css?family=Petit+Formal+Script|Archivo+Narrow);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Clicker+Script);
+
+
+
+/*
+	Synchronous: A responsive HTML5 website template by HTML5Templates.com
+	Released for free under the Creative Commons Attribution 3.0 license (html5templates.com/license)
+	Visit http://html5templates.com for more great templates or follow us on Twitter @HTML5T
+*/
+
+/*********************************************************************************/
+/* Global                                                                        */
+/*********************************************************************************/
+
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #dedede url(images/img01.png);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+	color: #0d0d0d;
+}
+
+h1, h2, h3 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+}
+
+p {
+	line-height: 120%;
+}
+
+a {
+	color: #D1551F;
+}
+
+strong {
+	font-weight: 700;
+	color: #2A2A2A;
+}
+
+/* Copyright */
+
+#copyright {
+	overflow: hidden;
+	padding: 50px 0px;
+	border-top: 1px solid #E8E8E3;
+}
+
+#copyright p {
+	text-align: center;
+	font-family: 'Abel', sans-serif;
+	font-size: 11pt;
+	color: #999999;
+}
+
+#subtext p {
+	
+	font-family: 'Abel', sans-serif;
+	font-size: 14pt;
+	color: #0f0f0f;
+}
+
+#copyright a {
+	color: #858585;
+}
+
+#copyright a:hover {
+	text-decoration: none;
+}
+
+/** LIST STYLE 1 */
+ul {
+	list-style-type: disc;
+	line-height: 120%;
+}
+
+
+ul.style1 {
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	list-style-type: disc;
+}
+
+ul.style1 li {
+	padding: 15px 0px 15px 0px;
+	border-top: 1px solid #E6E6E6;
+	line-height: 160%;
+}
+
+ul.style1 a {
+	display: block;
+	padding: 0px 0px 0px 0px;
+	text-decoration: none;
+	color: #525252;
+}
+
+ul.style1 a:hover {
+	text-decoration: underline;
+}
+
+ul.style1 .first {
+	border-top: none;
+	padding-top: 0px;
+}
+
+/** LIST STYLE 3 */
+
+ul.style3 {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	list-style-type: disc;
+}
+
+ul.style3 li {
+	padding: 20px 0px 25px 0px;
+	border-top: 1px solid #E7E5DA;
+	list-style-type: disc;
+}
+
+ul.style3 a {
+	display: block;
+	text-decoration: none;
+	color: #525252;
+}
+
+ul.style3 a:hover {
+	text-decoration: underline;
+}
+
+ul.style3 .date {
+	width: 100px;
+	margin: 0px 0px 20px 0px;
+	padding: 7px 0px 7px 0px;
+	background: #CEC3A0;
+	border-radius: 5px;
+	line-height: normal;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px #8A8B71;
+	font-family: 'Abel', sans-serif;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+
+ul.style3 .date b {
+}
+
+ul.style3 .date a {
+	color: #FFFFFF;
+}
+
+ul.style3 .date a:hover {
+	text-decoration: none;
+}
+
+ul.style3 .first {
+	padding-top: 0px;
+	border-top: none;
+}
+
+/** Classes */
+
+#getstarted {
+	margin: 0px;
+	padding-top: 40px;
+	background: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+	color: #0d0d0d;
+}
+#faq {
+	margin: 0px;
+	padding: 0px;
+	background: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+	color: #8A8A8A;
+}
+
+.post{
+	
+	margin: 12px;
+	
+}
+
+/** BUTTON STYLE */
+
+.button-style {
+	margin: 20px 0px 20px 0px;
+}
+
+.button-style a {
+	padding: 7px 20px 7px 20px;
+	background: #996633;
+	border-radius: 5px;
+	line-height: normal;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #8A8B71;
+	font-family: 'Abel', sans-serif;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+
+.pay-button {
+	margin: auto 0;
+	text-align: center;
+}
+
+.get-started-header{
+	text-align: left;
+}
+
+#get-started-dream-machine{
+	width: 100%;
+}
+
+#get-started-subtext-1{
+	display: block;
+	text-align: center;
+	text-transform: lowercase;
+	font-family: 'Petit Formal Script', cursive;
+	font-size: 40pt;
+	font-weight: 300;
+	color: #000000;
+}
+
+#get-started-subtext-2 {
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-size: 16pt;
+	font-weight: 200;
+	color: #616161;
+}
+
+.responsive-image { 
+	display:block; 
+  width: 100%;
+  height: auto;
+}
+
+/*  Price Columns */
+
+* {
+    box-sizing: border-box;
+} 
+
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  border-top: 0px;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+
+.price li {
+  padding: 20px;
+  text-align: center;
+}
+
+
+.product-price h1 {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  text-transform: lowercase;
+  font-family: 'Petit Formal Script', cursive;
+  font-size: 40pt;
+  font-weight: 300;
+  color: #000000;
+  padding-top: 10px;
+}
+
+.product-info p {
+  padding: 0px 0px 0px 0px;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 13pt;
+  font-weight: 200;
+  color: #616161;
+  line-height: 130%;
+}
+
+#price-columns {
+	padding-top: 50px;
+}
+
+#price-columns .header {
+	border: 1px solid black;
+	padding: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}

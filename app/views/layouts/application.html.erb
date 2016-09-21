@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bandturo - Tour booking dream machine</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <meta charset="utf-8">
+  <meta name="description" content="Book a tour today with our affordable, proven system and get paid to travel.">
+  <meta name="keywords" content="Band, tour, booking, agent, booking agents, gigs, get more gigs">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-33713101-3', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script src="../stylesheets/5grid/jquery.js"></script>
+  <script src="../stylesheets/5grid/init.js?use=mobile,desktop,1000px&amp;mobileUI=1&amp;mobileUI.theme=none"></script>
+  <!--[if IE 9]><link rel="stylesheet" href="style-ie9.css"><![endif]-->
+</head>
+<body class="homepage">
+<div id="wrapper">
+    <header id="header">
+      <div class="5grid-layout">
+        <div class="row">
+          <div class="12u" id="logo">
+            <!-- Logo -->
+            <h1><a href="#" class="mobileUI-site-name">Bandturo</a></h1>
+            <p>Tour booking dream machine</p>
+          </div>
+        </div>
+      </div>
+      <div class="5grid-layout">
+        <div class="row">
+          <div class="12u" id="menu">
+            <div id="menu-wrapper">
+              <nav class="mobileUI-site-nav">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="testimonial.html">What's It Like?</a></li>
+                  <li class="current_page_item"><a href="getstarted.html">Get Started</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+<%= yield %>
+  <div class="5grid-layout">
+    <div class="row" id="footer-content">
+      <div id="copyright" class="5grid-layout">
+        <section>
+          <p>&copy; Bandturo | 726 NW 8th Ave Suite F, Gainesville, Florida 32601 | (352)354-7461</p>
+        </section>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
