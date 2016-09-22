@@ -2,7 +2,7 @@ class ChargesController < ApplicationController
 
   def new
   end 
-  
+
   def create
     @amount = params[:amount]
 
@@ -14,7 +14,7 @@ class ChargesController < ApplicationController
     charge = Stripe::Charge.create(
       :customer    => customer.id,
       :amount      => @amount,
-      :description => params[:description],
+      :description => 'Bandturo Customer',
       :currency    => 'usd'
     )
 
