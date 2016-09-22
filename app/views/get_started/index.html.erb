@@ -53,7 +53,7 @@
                   </script>
                 </form></li>
             </ul>
-          </d
+          </div>
           <div class="columns">
             <ul class="price">
               <li class="header"><h1>Tried & True</h1></li>
@@ -87,7 +87,7 @@
                 </form>
               </li>
             </ul>
-          </d
+          </div>
           <div class="columns">
             <ul class="price">
               <li class="header"><h1>The Cul-de-sac</h1></li>
@@ -102,7 +102,7 @@
                 </p>
               </li>
               <li class="grey">
-                <%= form_tag charges_path do %>
+                <%= form_tag charges_path, :class => "pay-button" do %>
                   <article>
                     <% if flash[:error].present? %>
                       <div id="error_explanation">
@@ -110,16 +110,17 @@
                       </div>
                     <% end %>
                     <label class="amount">
-                      <span>Amount: $199.00</span>
+                      <!--<span>Amount: $199.00</span>-->
                     </label>
                   </article>
-                  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button pay-button"
+                  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                           data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
                           data-description="The Cul-de-sac"
-                          data-image="images/mini-van.png"
-                          data-amount="199900"
+                          data-image="mini-van.png"
+                          data-amount="19990"
                           data-locale="auto"
-                          data-label="Get Started"></script>
+                          data-label="Get Started">
+                  </script>
                 <% end %>
               </li>
             </ul>
