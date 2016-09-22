@@ -1,125 +1,132 @@
-    <div id="getstarted">
-      <div class="5grid-layout" id="content">
-        <div class="row">
-          <div class="12u">
-            <section>
-              <div class="post">     
-                <h2 id="get-started-header">Get Started&nbsp;&nbsp;<img src="images/van.png" width="5%"></h2><br>
-                <h3 id="get-started-subtext-1" align="center">$49</h3>
-                <p id="get-started-subtext-2" align="center">Limited-time, introductory offer</p>
-                <br />
-              </div>
-              <p>
-                <a href="https://bandturo.com" target="_blank">
-                <img src="images/road.png" style="height: 100%; width: 100%; object-fit: cover;" border="0" alt="Bandturo - Touring Artist Dream Machine">
-                </a>
-              </p>
-              <p>&nbsp;</p> 
-              <h2>The best gigs are booked six months ahead of time</h2>
-              <p>&nbsp;</p>
-              <p>Six months is best. Three months is fine. Tomorrow? We will help with that. What is important right now 
-        is that you get the ball rolling. Use our secure 
-        payment system and we will get to work for you immediately. The set-up process typically takes about a 
-        week to complete. After set-up, we will begin contacting our network of about 2,000 talent buyers on your behalf. 
-        You keep all the money from the door, merch, etc. We keep a constant stream of communication open and available. 
-        We also offer other services behind the scenes if needed--we've been there. Let us know how we can help you be successful.</p>
-              <p>&nbsp;</p>  
-            </section>
-      
-            <section id="price-columns">
-              <div class="columns">
-                <ul class="price">
-                  <li class="header"><h1>Haptic Surgery</h1></li>
-          <li class="product-price"><h1>$49</h1></li>
-           <li><h1>One Sheet | Press Kit | Tour Route | (Unlimited) Email Blasts | Mentor</h1></li>
-                  <li class="product-info">
-                    <p>Save hours of boring booking and get set up with a 
-     clean looking system that will put you in contact with talent buyers 
-     in any region of the country. Be your own agent. Close your own gig 
-     deals. But without the tedious stuff.
-                    </p>
-                  </li>
-                  <li class="grey">
-                    <form class="pay-button" action="/your-charge-code" method="POST">
-                      <script
-                        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                        data-key="pk_live_0vNKIZgYjeoPt0KZoDzcJa03"
-                        data-amount="4900"
-                        data-name="Bandturo"
-                        data-description="Haptic Surgery"
-                        data-image="images/mini-van.png"
-                        data-locale="auto"
-                        data-label="Get Started">
-                      </script>
-                    </form></li>
-                </ul>
-              </div>
-              <div class="columns">
-                <ul class="price">
-                  <li class="header"><h1>Tried & True</h1></li>
-                  <li class="product-price"><h1>$99</h1></li>
-          <li><h1>One Sheet | Press Kit | Tour Route | (Unlimited) Email Blasts | Booking Agent | Budget Analysis | Verified Open Mic Fill-ins</h1></li>
-                  <li class="product-info">
-                    <p>As musicians ourselves, we understand that many shows 
-     on the road can be duds--even with the best planning. We will build out everything, 
-     have an experienced agent book all the paying gigs we can for you, and fill in 
-     most/all of the other open dates with personally verified open mic nights. 
-     More than half the time, 
-     playing an open mic will sell you more merch and win over more new fans than 
-     the low paying gigs often offered to new artists. Getting in front of more people 
-     in that town now means playing for more fans next time, and helps leverage your 
-     deal in that market next time you tour. You 
-     get the most of your first few times on the road. More money now, and more money later.
-                    </p>
-                  </li>
-                  <li class="grey">
-                    <form class="pay-button" action="/your-charge-code" method="POST">
-                      <script
-                        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                        data-key="pk_live_0vNKIZgYjeoPt0KZoDzcJa03"
-                        data-amount="9900"
-                        data-name="Bandturo"
-                        data-description="Tried & True"
-                        data-image="images/mini-van.png"
-                        data-locale="auto"
-                        data-label="Get Started">
-                      </script>
-                    </form>
-                  </li>
-                </ul>
-              </div>
-              <div class="columns">
-                <ul class="price">
-                  <li class="header"><h1>The Cul-de-sac</h1></li>
-                  <li class="product-price"><h1>$199</h1></li>
-          <li><h1>One Sheet | Press Kit | Booking Agent | 5-Market Development</h1></li>
-                  <li class="product-info">
-                    <p>Not everyone can take off form work and family, and 
-     go on the road for weeks at a time. We will look at your area and help 
-     you find gigs that are driveable/busable on weekends. This helps keep travel 
-     costs low while building a steady fanbase to use for extra income or launching 
-     into a full-time career musician. Shower, and repeat.
-                    </p>
-                  </li>
-                  <li class="grey">
-                    <form class="pay-button" action="/your-charge-code" method="POST">
-                      <script
-                        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                        data-key="pk_live_0vNKIZgYjeoPt0KZoDzcJa03"
-                        data-amount="19900"
-                        data-name="Bandturo"
-                        data-description="The Cul-de-sac"
-                        data-image="images/mini-van.png"
-                        data-locale="auto"
-                        data-label="Get Started">
-                      </script>
-                    </form>
-                  </li>
-                </ul>
-              </div>
-            </section>
+<div id="getstarted">
+  <div class="5grid-layout" id="content">
+    <div class="row">
+      <div class="12u">
+        <section>
+          <div class="post">     
+            <h2 id="get-started-header">Get Started&nbsp;&nbsp; <%= image_tag("van.png", class: "van-icon") %></h2><br>
+            <h3 id="get-started-subtext-1" align="center">$49</h3>
+            <p id="get-started-subtext-2" align="center">Limited-time, introductory offer</p>
+            <br />
           </div>
-        </div>
+          <p>
+            <a href="https://bandturo.com" target="_blank">
+              <%= image_tag("road.png", alt: "Bandturo - Touring Artist Dream Machine", class: "van-on-road-img") %>
+            </a>
+          </p>
+          <p>&nbsp;</p> 
+          <h2>The best gigs are booked six months ahead of time</h2>
+          <p>&nbsp;</p>
+          <p>Six months is best. Three months is fine. Tomorrow? We will help with that. What is important right now 
+          is that you get the ball rolling. Use our secure 
+          payment system and we will get to work for you immediately. The set-up process typically takes about a 
+          week to complete. After set-up, we will begin contacting our network of about 2,000 talent buyersyourbehalf. 
+          You keep all the money from the door, merch, etc. We keep a constant stream of communication oandavailable. 
+          We also offer other services behind the scenes if needed--we've been there. Let us know how we can hyoube successful.</p>
+          <p>&nbsp;</p>  
+        </section>
+  
+        <section id="price-columns">
+          <div class="columns">
+            <ul class="price">
+              <li class="header"><h1>Haptic Surgery</h1></li>
+              <li class="product-price"><h1>$49</h1></li>
+              <li><h1>One Sheet | Press Kit | Tour Route | (Unlimited) Email Blasts | Mentor</h1></li>
+              <li class="product-info">
+                <p>Save hours of boring booking and get set up with a 
+                clean looking system that will put you in contact with talent buyers 
+                in any region of the country. Be your own agent. Close your own gig 
+                deals. But without the tedious stuff.
+                </p>
+              </li>
+              <li class="grey">
+                <form class="pay-button" action="/your-charge-code" method="POST">
+                  <script
+                    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                    data-key="pk_live_0vNKIZgYjeoPt0KZoDzcJa03"
+                    data-amount="4900"
+                    data-name="Bandturo"
+                    data-description="Haptic Surgery"
+                    data-image="images/mini-van.png"
+                    data-locale="auto"
+                    data-label="Get Started">
+                  </script>
+                </form></li>
+            </ul>
+          </d
+          <div class="columns">
+            <ul class="price">
+              <li class="header"><h1>Tried & True</h1></li>
+              <li class="product-price"><h1>$99</h1></li>
+              <li><h1>One Sheet | Press Kit | Tour Route | (Unlimited) Email Blasts | Booking Agent | Budget Analy| Verified Open Mic Fill-ins</h1></li>
+              <li class="product-info">
+                <p>As musicians ourselves, we understand that many shows 
+                on the road can be duds--even with the best planning. We will build out everything, 
+                have an experienced agent book all the paying gigs we can for you, and fill in 
+                most/all of the other open dates with personally verified open mic nights. 
+                More than half the time, 
+                playing an open mic will sell you more merch and win over more new fans than 
+                the low paying gigs often offered to new artists. Getting in front of more people 
+                in that town now means playing for more fans next time, and helps leverage your 
+                deal in that market next time you tour. You 
+                get the most of your first few times on the road. More money now, and more money later.
+                </p>
+              </li>
+              <li class="grey">
+                <form class="pay-button" action="/your-charge-code" method="POST">
+                  <script
+                    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                    data-key="pk_live_0vNKIZgYjeoPt0KZoDzcJa03"
+                    data-amount="9900"
+                    data-name="Bandturo"
+                    data-description="Tried & True"
+                    data-image="images/mini-van.png"
+                    data-locale="auto"
+                    data-label="Get Started">
+                  </script>
+                </form>
+              </li>
+            </ul>
+          </d
+          <div class="columns">
+            <ul class="price">
+              <li class="header"><h1>The Cul-de-sac</h1></li>
+              <li class="product-price"><h1>$199</h1></li>
+              <li><h1>One Sheet | Press Kit | Booking Agent | 5-Market Development</h1></li>
+              <li class="product-info">
+                <p>Not everyone can take off form work and family, and 
+                go on the road for weeks at a time. We will look at your area and help 
+                you find gigs that are driveable/busable on weekends. This helps keep travel 
+                costs low while building a steady fanbase to use for extra income or launching 
+                into a full-time career musician. Shower, and repeat.
+                </p>
+              </li>
+              <li class="grey">
+                <%= form_tag charges_path do %>
+                  <article>
+                    <% if flash[:error].present? %>
+                      <div id="error_explanation">
+                        <p><%= flash[:error] %></p>
+                      </div>
+                    <% end %>
+                    <label class="amount">
+                      <span>Amount: $199.00</span>
+                    </label>
+                  </article>
+                  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button pay-button"
+                          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+                          data-description="The Cul-de-sac"
+                          data-image="images/mini-van.png"
+                          data-amount="199900"
+                          data-locale="auto"
+                          data-label="Get Started"></script>
+                <% end %>
+              </li>
+            </ul>
+          </div>
+        </section>
       </div>
-    </div>  
-  </div>
+    </div>
+  </div> 
+</div>
+

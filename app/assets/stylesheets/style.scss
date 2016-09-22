@@ -38,7 +38,8 @@ p {
 	line-height: 120%;
 }
 
-a {
+a,
+.nav_link {
 	color: #D1551F;
 }
 
@@ -319,4 +320,26 @@ ul.style3 .first {
   .columns {
     width: 100%;
   }
+ } 
+
+.van-icon {
+  width: 5%;
+}
+
+.van-on-road-img {
+  height: 100%; 
+  width: 100%; 
+  object-fit: cover;
+  border: 0;
+}
+
+.van-img {
+  height: 100%; 
+  width: 50%; 
+  object-fit: cover;
+  border: 0;
+}
+
+.bo-img {
+  width: 15%;
 }

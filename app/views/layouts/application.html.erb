@@ -41,12 +41,12 @@
             <div id="menu-wrapper">
               <nav class="mobileUI-site-nav">
                 <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="faq.html">FAQ</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                  <li><a href="testimonial.html">What's It Like?</a></li>
-                  <li class="current_page_item"><a href="getstarted.html">Get Started</a></li>
+                  <li><%= link_to "Home", '/home', :method => :get, :class => 'nav_link'%></li>
+                  <li><%= link_to "About", '/about', :method => :get, :class => 'nav_link'%></li>
+                  <li><%= link_to "FAQ", '/faq', :method => :get, :class => 'nav_link'%></li>
+                  <li><%= link_to "Contact", '/contact', :method => :get, :class => 'nav_link'%></li>
+                  <li><%= link_to "Testimonial", '/testimonial', :method => :get, :class => 'nav_link'%></li>
+                  <li><%= link_to "Get Started", '/get_started', :method => :get, :class => 'nav_link', :class => 'get_started_link'%></li>
                 </ul>
               </nav>
             </div>

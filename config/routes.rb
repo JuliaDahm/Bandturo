@@ -1,12 +1,19 @@
 Rails.application.routes.draw do
   
+  resources :charges
+  
+  #GET 
   get 'get_started' => 'get_started#index'
   get 'testimonial' => 'testimonial#index'
   get 'contact' => 'contact#index'
   get 'faq' => 'faq#index'
   get 'about' => 'about#index'
-  get 'home/index'
+  get 'home' => 'home#index'
   root 'home#index'
+
+
+  #POST
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
