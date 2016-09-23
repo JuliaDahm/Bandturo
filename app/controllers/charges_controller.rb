@@ -4,14 +4,14 @@ class ChargesController < ApplicationController
   end 
 
   def create
-    @amount = params[:amount]
 
     customer = Stripe::Customer.create(
       :email => params[:stripeEmail],
       :source  => params[:stripeToken]
     )
-
+gi
     charge = Stripe::Charge.create(
+      @amount = params[:amount]
       :customer    => customer.id,
       :amount      => @amount,
       :description => 'Bandturo Customer',
