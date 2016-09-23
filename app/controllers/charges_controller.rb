@@ -9,7 +9,7 @@ class ChargesController < ApplicationController
       :email => params[:stripeEmail],
       :source  => params[:stripeToken]
     )
-gi
+    
     charge = Stripe::Charge.create(
       @amount = params[:amount]
       :customer    => customer.id,
