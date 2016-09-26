@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  
+
+  get 'thanks/index'
+
   resources :charges
   
   #GET 
