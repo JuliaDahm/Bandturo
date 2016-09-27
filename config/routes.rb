@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
 
-  get 'thanks/index'
 
   resources :charges
+
   
   #GET 
+  get 'thanks' => 'thanks#index'
   get 'get_started' => 'get_started#index'
   get 'testimonial' => 'testimonial#index'
   get 'contact' => 'contact#index'

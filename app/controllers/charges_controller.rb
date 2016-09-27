@@ -14,12 +14,12 @@ class ChargesController < ApplicationController
       end
 
     @description = case params[:plan_chosen]
-      when 0 then ''
-      when 1 then ''
-      when 2 then 'Cul-de-sac'
-      else 
-        raise 'plan not supported'
-      end 
+      when 0 then 'Tour Foundations 1'
+      when 1 then 'Tour Foundations 2'
+      when 2 then 'The Cul-De-Sac'
+      else
+        raise 'Plan not supported'
+      end    
 
     customer = Stripe::Customer.create(
       :email => params[:stripeEmail],
@@ -31,14 +31,10 @@ class ChargesController < ApplicationController
       :amount      => @amount,
       :description => @description,
       :currency    => 'usd'
-    )
+    ) 
 
-  if charge.save
-    redirect_to thanks_index_path
-  else 
   rescue Stripe::CardError => e
     flash[:error] = e.message
     redirect_to new_charge_path
   end
-
 end
