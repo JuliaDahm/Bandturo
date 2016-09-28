@@ -4,7 +4,6 @@ class ChargesController < ApplicationController
   end 
 
   def create
-
     @amount = case params[:plan_chosen]
       when 0 then 4900 
       when 1 then 9900
@@ -19,24 +18,27 @@ class ChargesController < ApplicationController
       when 2 then 'The Cul-De-Sac'
       else
         raise 'Plan not supported'
-      end    
-
-    customer = Stripe::Customer.create(
-      :email => params[:stripeEmail],
-      :source  => params[:stripeToken]
-    )
-
-    charge = Stripe::Charge.create(
-      :customer    => customer.id,
-      :amount      => @amount,
-      :description => @description,
-      :currency    => 'usd'
-    ) 
-
-  rescue Stripe::CardError => e
-    flash[:error] = e.message
-    redirect_to new_charge_path
-  else 
-    redirect_to thanks_path
+      end 
+             
+    begin  
+      customer = Stripe::Customer.create(
+        :email => params[:stripeEmail],
+        :source  => params[:stripeToken]
+      )
+  
+      charge = Stripe::Charge.create(
+        :customer    => customer.id,
+        :amount      => @amount,
+        :description => @description,
+        :currency    => 'usd'
+      ) 
+  
+      rescue Stripe::CardError => e
+        flash[:error] = e.message
+        redirect_to new_charge_path
+      end
+      redirect_to thanks_path
+    end 
   end
+  
 end
