@@ -27,7 +27,8 @@
 	}
 	
 	#mobileUI-site-titlebar {
-		background: url(images/img01.png) repeat;
+		//= depend_on_asset "img01.png"
+		background: url('<%= asset_path("img01.png") %>') repeat;
 		border-bottom: 1px solid #CFCFCF;
 	}
 	
@@ -46,7 +47,8 @@
 	#mobileUI-site-nav-opener {
 		width: 15px;
 		height: 15px;
-		background: url(images/img04.png) no-repeat left top;
+		//= depend_on_asset "img04.png"
+		background: url('<%= asset_path("img04.png") %>') no-repeat left top;
 		top: 15px;
 		left: 10px;
 		text-indent: -999999em;

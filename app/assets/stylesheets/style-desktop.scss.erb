@@ -17,11 +17,13 @@
 		overflow: hidden;
 		min-height: 1000px;
 		padding: 5px 10px 5px 10px;
-		background: #ffffff url(images/img02.png) repeat-x left top;
+		//= depend_on_asset "img02.png"
+		background: #ffffff url('<%= asset_path("img02.png") %>') repeat-x left top;
 	}
 	
 	#wrapper {
-		background: #FFFFFF url(images/img03.png) repeat-x left top;
+		//= depend_on_asset "img03.png"
+		background: #FFFFFF url('<%= asset_path("img03.png") %>') repeat-x left top;
 		overflow: hidden;
 	}
 	
