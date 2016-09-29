@@ -340,10 +340,8 @@ ul.style3 .first {
 .product-perks h1 {
 }
 
-// #copyright {
-//   background: #dedede url(images/img01.png);
-// }
+#copyright {
+  // depend_on_asset "img01.png"
+  background: #dedede url('<%= asset_path("img01.png") %>');
+}
 
-// .homepage {
-//   background: #dedede url(images/img01.png);
-// }
