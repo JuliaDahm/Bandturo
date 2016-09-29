@@ -5,21 +5,21 @@ class ChargesController < ApplicationController
 
   def create
     @amount = case params[:plan_chosen]
-      when 0 then 4900 
-      when 1 then 9900
-      when 2 then 19900
+      when "0" then 4900 
+      when "1" then 9900
+      when "2" then 19900
       else
         raise 'Plan not supported'
       end
 
     @description = case params[:plan_chosen]
-      when 0 then 'Tour Foundations 1'
-      when 1 then 'Tour Foundations 2'
-      when 2 then 'The Cul-De-Sac'
+      when "0" then 'Tour Foundations 1'
+      when "1" then 'Tour Foundations 2'
+      when "2" then 'The Cul-De-Sac'
       else
         raise 'Plan not supported'
       end 
-             
+              
     begin  
       customer = Stripe::Customer.create(
         :email => params[:stripeEmail],
@@ -39,6 +39,4 @@ class ChargesController < ApplicationController
       end
       redirect_to thanks_path
     end 
-  end
-  
 end

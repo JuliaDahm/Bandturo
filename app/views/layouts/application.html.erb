@@ -19,9 +19,6 @@
     ga('create', 'UA-33713101-3', 'auto');
     ga('send', 'pageview');
   </script>
-  <!-- <script src="jquery.js"></script>
-  <script src="init.js?use=mobile,desktop,1000px&amp;mobileUI=1&amp;mobileUI.theme=none"></script>
-  <!--[if IE 9]><link rel="stylesheet" href="style-ie9.css"><![endif]--> -->
 </head>
 <body class="homepage">
 <div id="wrapper">
@@ -46,7 +43,7 @@
                   <li><%= link_to "FAQ", '/faq', :method => :get, :class => 'nav_link'%></li>
                   <li><%= link_to "Contact", '/contact', :method => :get, :class => 'nav_link'%></li>
                   <li><%= link_to "Testimonial", '/testimonial', :method => :get, :class => 'nav_link'%></li>
-                  <li><%= link_to "Get Started", '/get_started', :method => :get, :class => 'nav_link', :class => 'get_started_link'%></li>
+                  <li><%= link_to "Get Started", '/get_started', :method => :get, :class => 'nav_link get_started_link'%></li>
                 </ul>
               </nav>
             </div>
@@ -56,13 +53,12 @@
     </header>
 <%= yield %>
   <div class="5grid-layout">
-    <div class="row" id="footer-content">
-      <div id="copyright" class="5grid-layout">
-        <section>
-          <p>&copy; Bandturo | 726 NW 8th Ave Suite F, Gainesville, Florida 32601 | (352)354-7461</p>
-        </section>
-      </div>
-    </div>
+    <div class="row" id="footer-content"></div>
+  </div>
+  <div id="copyright" class="5grid-layout">
+    <section>
+      <p>&copy; Bandturo | 726 NW 8th Ave Suite F, Gainesville, Florida 32601 | (352)354-7461</p>
+    </section>
   </div>
 </body>
 </html>

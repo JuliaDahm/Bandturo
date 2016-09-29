@@ -27,11 +27,14 @@
         </section>
   
         <section id="price-columns">
-          <!--<div class="columns">
+          <div class="columns">
             <ul class="price">
-              <li class="header"><h1>Haptic Surgery</h1></li>
+              <li class="header"><h1>Tour Foundations I</h1></li>
               <li class="product-price"><h1>$49</h1></li>
-              <li><h1>One Sheet | Press Kit | Tour Route | (Unlimited) Email Blasts | Mentor</h1></li>
+              <li class="product-perks">
+                <h1>One Sheet | Press Kit | Tour Route</h1>
+                <h1>(Unlimited) Email Blasts | Mentor</h1>
+              </li>
               <li class="product-info">
                 <p>Save hours of boring booking and get set up with a 
                 clean looking system that will put you in contact with talent buyers 
@@ -40,25 +43,36 @@
                 </p>
               </li>
               <li class="grey">
-                <form class="pay-button" action="/your-charge-code" method="POST">
-                  <script
-                    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                    data-key="pk_live_0vNKIZgYjeoPt0KZoDzcJa03"
-                    data-amount="4900"
-                    data-name="Bandturo"
-                    data-description="Haptic Surgery"
-                    data-image="images/mini-van.png"
-                    data-locale="auto"
-                    data-label="Get Started">
+                <%= form_tag charges_path, :class => "pay-button" do %>
+                  <article>
+                    <% if flash[:error].present? %>
+                      <div id="error_explanation">
+                        <p><%= flash[:error] %></p>
+                      </div>
+                    <% end %>
+                  </article>
+                  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+                          data-description="Tour Foundations 1"
+                          data-amount="4900"
+                          data-locale="auto"
+                          data-label="Get Started">
                   </script>
-                </form></li>
+                  <input type="hidden" name="plan_chosen" value="0"/>
+                <% end %>
+                </form>
+              </li>
             </ul>
           </div>
           <div class="columns">
             <ul class="price">
-              <li class="header"><h1>Tried & True</h1></li>
+              <li class="header"><h1>Tour Foundations II</h1></li>
               <li class="product-price"><h1>$99</h1></li>
-              <li><h1>One Sheet | Press Kit | Tour Route | (Unlimited) Email Blasts | Booking Agent | Budget Analy| Verified Open Mic Fill-ins</h1></li>
+              <li class="product-perks">
+                <h1>One Sheet | Press Kit | Tour Route</h1> 
+                <h1>(Unlimited) Email Blasts | Booking Agent</h1> 
+                <h1>Budget Analysis | Verified Open Mic Fill-ins</h1>
+              </li>
               <li class="product-info">
                 <p>As musicians ourselves, we understand that many shows 
                 on the road can be duds--even with the best planning. We will build out everything, 
@@ -73,26 +87,35 @@
                 </p>
               </li>
               <li class="grey">
-                <form class="pay-button" action="/your-charge-code" method="POST">
-                  <script
-                    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                    data-key="pk_live_0vNKIZgYjeoPt0KZoDzcJa03"
-                    data-amount="9900"
-                    data-name="Bandturo"
-                    data-description="Tried & True"
-                    data-image="images/mini-van.png"
-                    data-locale="auto"
-                    data-label="Get Started">
+                <%= form_tag charges_path, :class => "pay-button" do %>
+                  <article>
+                    <% if flash[:error].present? %>
+                      <div id="error_explanation">
+                        <p><%= flash[:error] %></p>
+                      </div>
+                    <% end %>
+                  </article>
+                  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+                          data-description="Tour Foundations 2"
+                          data-amount="9900"
+                          data-locale="auto"
+                          data-label="Get Started">
                   </script>
+                  <input type="hidden" name="plan_chosen" value="1"/>
+                <% end %>
                 </form>
               </li>
             </ul> 
-          </div> -->
+          </div>
           <div class="columns">
             <ul class="price">
               <li class="header"><h1>The Cul-de-sac</h1></li>
               <li class="product-price"><h1>$199</h1></li>
-              <li><h1>One Sheet | Press Kit | Booking Agent | 5-Market Development</h1></li>
+              <li class="product-perks">
+                <h1>One Sheet | Press Kit</h1> 
+                <h1>Booking Agent | 5-Market Development</h1>
+              </li>
               <li class="product-info">
                 <p>Not everyone can take off form work and family, and 
                 go on the road for weeks at a time. We will look at your area and help 
@@ -109,9 +132,6 @@
                         <p><%= flash[:error] %></p>
                       </div>
                     <% end %>
-                    <label class="amount">
-                      <!-- <span>Amount: $199.00</span> -->
-                    </label>
                   </article>
                   <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                           data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
@@ -120,7 +140,7 @@
                           data-locale="auto"
                           data-label="Get Started">
                   </script>
-                  <input type="hidden" name="plan_chosen" value="cul-de-sac" id="2" amount="500"/>
+                  <input type="hidden" name="plan_chosen" value="2"/>
                 <% end %>
               </li>
             </ul>

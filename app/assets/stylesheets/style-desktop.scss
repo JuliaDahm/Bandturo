@@ -9,14 +9,14 @@
 /* Desktop (>= 480px)                                                            */
 /*********************************************************************************/
 
-@media (min-width: 415px) {
+@media (min-width: 480px) {
 
 	/* Wrapper */
 	
 	.homepage #wrapper {
 		overflow: hidden;
 		min-height: 1000px;
-		padding: 0px 0px 50px 0px;
+		padding: 5px 10px 5px 10px;
 		background: #ffffff url(images/img02.png) repeat-x left top;
 	}
 	
@@ -215,7 +215,7 @@
 		font-size: 14pt;
 		font-weight: 200;
 		color: #616161;
-		padding: 12px 0px 12px 0px;
+		padding: 12px 12px 12px 12px;
 	}
 	
 	#menu .get_started_link {
@@ -321,7 +321,7 @@
 	
 	#footer-content {
 		overflow: hidden;
-		padding: 60px 0px 60px 0px;
+		padding: 60px 0px 20px 0px;
 		text-shadow: 1px 1px 1px #FFFFFF;
 		color: #525252;
 	}
