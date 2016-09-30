@@ -4,6 +4,7 @@ class ChargesController < ApplicationController
   end 
 
   def create
+    binding.pry
     @amount = case params[:plan_chosen]
       when "0" then 4900 
       when "1" then 9900
@@ -18,8 +19,7 @@ class ChargesController < ApplicationController
       when "2" then 'The Cul-De-Sac'
       else
         raise 'Plan not supported'
-      end 
-              
+      end       
     begin  
       customer = Stripe::Customer.create(
         :email => params[:stripeEmail],
