@@ -1,23 +1,19 @@
-/*
-	Synchronous: A responsive HTML5 website template by HTML5Templates.com
-	Released for free under the Creative Commons Attribution 3.0 license (html5templates.com/license)
-	Visit http://html5templates.com for more great templates or follow us on Twitter @HTML5T
-*/
+@media (max-width: 760px){
 
-/*********************************************************************************/
-/* Mobile (<= 320px)                                                             */
-/*********************************************************************************/
+	/* Columns */
 
+	body .columns {
+		width: 100%;
+		padding-bottom: 100px;
+	}
 
-@media-screen (min-width: 320px) and (max-width: 736){
+	body .price {
+		padding-bottom: 10px;
+	}
+
 
 	/* Wrapper */
 
-	.columns {
-		width: 100%;
-		display: block;
-	}
-	
 	#wrapper {
 		overflow: hidden;
 		min-height: 1000px;
@@ -26,10 +22,66 @@
 	}
 	
 	/* Header */
-	
+
 	#header {
-		display: none;
+		background: url('<%= asset_path("img01.png") %>') repeat;
 	}
+
+	#logo h1 a {
+		letter-spacing: -2px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 40pt;
+    font-weight: 300;
+    color: #000000;
+    padding-left: 40%;
+	}
+
+	#menu {
+	  background: url('<%= asset_path("img01.png") %>') repeat top left;
+	  left: -285px;
+	  height: 100%;
+	  position: fixed;
+	  width: 285px;
+	}  
+
+	.icon-close {
+  cursor: pointer;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.icon-menu {
+  cursor: pointer;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.icon-menu, 
+.mobileUI-site-name {
+	float: left;
+}
+
+.logo-header p {
+	display: none;
+}
+
+.mobileUI-site-name {
+	text-align: center;
+}
+
+#mobileUI-site-wrapper {
+	position: relative;
+  z-index: 100;
+  top: 44px;
+  width: 100%;
+  overflow: auto;
+}
 	
 	#mobileUI-site-titlebar {
 		//= depend_on_asset "img01.png"
@@ -38,6 +90,14 @@
 	}
 	
 	#mobileUI-site-title {
+		position: fixed;
+    z-index: 151;
+    top: 0px;
+    width: 100%;
+    overflow: hidden;
+    height: 44px;
+    line-height: 44px;
+    -webkit-user-select: none;
 		display: block;
 		letter-spacing: -1px;
 		text-align: center;
@@ -57,6 +117,10 @@
 		top: 15px;
 		left: 10px;
 		text-indent: -999999em;
+		position: absolute;
+    z-index: 152;
+    cursor: pointer;
+    -webkit-user-select: none;
 	}
 	
 	#mobileUI-site-nav-opener:active {
@@ -206,7 +270,7 @@
 	}
 	
 	#footer-content h2 {
-		padding: 0px 0px 40px 0px;
+		padding: 0px 0px 0px 0px;
 		text-transform: uppercase;
 		font-size: 20pt;
 		color: #616161;
@@ -238,5 +302,9 @@
 	
 	#footer-content #box3 {
 		overflow: hidden;
+	}
+
+	.hiddendiv {
+		display: none;
 	}
 }
